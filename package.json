@@ -1,0 +1,23 @@
+{
+  "name": "assignment-two",
+  "version": "1.0.0",
+  "description": "Wizeline Academy, assingment two, testing backend with postnamn and newman",
+  "main": "index.js",
+  "scripts": {
+    "test-api": "npx newman run ./testing-todoist/tests/backend/collection/todoist.postman_collection.json -e ./testing-todoist/tests/backend/env_variables/QA.postman_environment.json -d ./testing-todoist/tests/backend/data/TDD.csv -r htmlextra --reporter-htmlextra-export ./testing-todoist/tests/backend/reports/report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego-zco/assignment-two.git"
+  },
+  "author": "diego-zco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego-zco/assignment-two/issues"
+  },
+  "homepage": "https://github.com/diego-zco/assignment-two#readme",
+  "dependencies": {
+    "newman": "^5.2.2",
+    "newman-reporter-htmlextra": "^1.20.1"
+  }
+}
